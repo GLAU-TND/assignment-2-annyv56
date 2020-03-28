@@ -17,6 +17,15 @@ public class MyPriorityQueue {
     rear = null;
     size = 0;
   }
+  public boolean isEmpty()
+  {
+    boolean response = false;
+    if(front != null || size != 0){
+      response = true;
+    }
+    return response;
+  }
+  
   
   
 }
