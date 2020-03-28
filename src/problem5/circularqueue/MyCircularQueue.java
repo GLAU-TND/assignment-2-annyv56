@@ -23,6 +23,43 @@ public class MyCircularQueue {
       response=true;
     }
     return response;
- 
+  }
+  public void enqueue(Student element){    
+    Node node=new Node(element);    
+    if(front==null){
+            
+      front=node;
+      rear=node;
+      rear.setNext(front);
+      size++;
+      System.out.println("Value successfully appended");
+    }
+    else{      
+      rear.setNext(node);
+      rear=node;
+      rear.setNext(front);
+      size++;
+      System.out.println("Value successfully appended");
+    }
+  }
+  public Node dequeue(){    
+    Node response=null;    
+    if(front!=null){      
+      if(front.getNext()!=front){        
+        response=new Node(front.getData());        
+        front=front.getNext();
+        rear.setNext(front);
+        size--;
+      }
+      else{    
+        response=new Node(front.getData());        
+        front=null;
+        rear=null;
+        size--;
+      }
+    }    
+    return response;
   }
 }
+
+
