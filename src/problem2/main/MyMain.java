@@ -28,5 +28,11 @@ public class MyMain {
       System.out.print(root.getData()+"\t");
     }
   }
+  public static void prepost(){    
+    MyBinarySearchTree obj = new MyBinarySearchTree();
+    postorder(obj.getRoot());
+    System.out.println();
+    preorder(obj.getRoot());
+  }
 }
 
