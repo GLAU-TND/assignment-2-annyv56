@@ -11,12 +11,13 @@ import problem1.node.TreeNode;
 // use problem1.mybst.MyBinarySearchTree class for creating binary tree
 public class MyMain {
   public static void preorder(TreeNode root){
-  
-  
-  
+    if(root == null)
+      return;
+    else{
+      System.out.print(root.getData()+"\t");
+      preorder(root.getLeft());
+      preorder(root.getRight());
+    }
   }
-    
-    
-    
-    
 }
+
