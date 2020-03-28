@@ -59,6 +59,25 @@ public class MyBinarySearchTree {
       }
     }
   }
+  public boolean search(int data) { 
+    boolean response = false;    
+    TreeNode temp = root;     
+    while (temp != null) {        
+      if (temp.getData() == data) {        
+        response = true;        
+        break;
+      } 
+      else {
+        if (data <= temp.getData()) {          
+          temp = temp.getLeft();
+        }
+        else {      
+          temp = temp.getRight();
+        }
+      }
+    }
+        return response;
+    
 }  
 
   
