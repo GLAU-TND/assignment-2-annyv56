@@ -8,8 +8,7 @@ package problem1.mybst;
 // to implement BinarySearchTree
 public class MyBinarySearchTree {
   TreeNode root;
-  void printSingles(TreeNode node)
-  {
+  void printSingles(TreeNode node){
     if(node == null)
       return;
     if(node.left != null && node.right != null);
@@ -22,5 +21,10 @@ public class MyBinarySearchTree {
       System.out.print(node.right.data+" ");
       printSingles(node.right);
     }
-    
+    elseif(node.left != null)
+    {
+      System.out.print(node.left.data + " ");
+      printSingles(node.left);
+    }
+  }
 }
