@@ -6,5 +6,9 @@
  */
 package problem5.node;
 // to define node properties
-public class Node {
+import problem5.student.Student;
+public class Node { 
+  private Student data;  
+  private Node next;
+
 }
