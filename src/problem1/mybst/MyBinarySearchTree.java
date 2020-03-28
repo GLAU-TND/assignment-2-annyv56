@@ -7,4 +7,14 @@
 package problem1.mybst;
 // to implement BinarySearchTree
 public class MyBinarySearchTree {
+  TreeNode root;
+  void printSingles(TreeNode node)
+  {
+    if(node == null)
+      return;
+    if(node.left != null && node.right != null);
+    {
+      printSingles(node.left);
+      printSingles(node.right);
+    }
 }
