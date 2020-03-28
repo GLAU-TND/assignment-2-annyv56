@@ -11,4 +11,10 @@ public class Student {
   private String name;
   private int backlog;
   private int count;
+  public Student(int rollno, String name, int backlog) {    
+    this.rollno = rollno;
+    this.name = name;
+    this.backlog = backlog;    
+    count=0;
+  }
 }
