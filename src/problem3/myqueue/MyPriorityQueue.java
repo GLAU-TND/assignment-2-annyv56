@@ -103,6 +103,10 @@ public class MyPriorityQueue {
       return size;
     }
   }
+  public int getSize()
+  {
+    return size;
+  }
 }
 
   
