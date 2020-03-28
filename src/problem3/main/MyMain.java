@@ -7,5 +7,15 @@
 package problem3.main;
 // executable class
 // use problem5.student.Student class to create object of student
+import problem3.myqueue.MyPriorityQueue;
+import problem3.node.Node;
+import java.util.Scanner;
+
 public class MyMain {
+  public static void main(String[] args)
+  {
+    
+    
+  }
+  
 }
