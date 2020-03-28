@@ -7,4 +7,6 @@
 package problem3.node;
 
 public class Node {
+  int key;
+  Node next;
 }
