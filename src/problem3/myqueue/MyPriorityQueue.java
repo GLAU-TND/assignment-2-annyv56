@@ -5,6 +5,11 @@
  *  Time: 7:15 PM
  */
 package problem3.myqueue;
+import pronlem3.node.Node;
 
 public class MyPriorityQueue {
+  private Node front;
+  private Node rear;
+  private int size;
+  
 }
