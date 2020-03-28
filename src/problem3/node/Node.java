@@ -7,12 +7,6 @@
 package problem3.node;
 
 public class Node {
-  int key;
-  Node next;
-  public Node(int key)
-  {
-    this.key = key;
-    this.next = null;
-  }
-  
+  private int data;
+  private  Node next;
 }
