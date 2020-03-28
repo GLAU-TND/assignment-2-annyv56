@@ -17,4 +17,10 @@ public class MyBinarySearchTree {
       printSingles(node.left);
       printSingles(node.right);
     }
+    else if(node.right != null)
+    {
+      System.out.print(node.right.data+" ");
+      printSingles(node.right);
+    }
+    
 }
