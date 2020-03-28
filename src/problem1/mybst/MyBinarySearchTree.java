@@ -14,5 +14,52 @@ import java.util.Queue;
 public class MyBinarySearchTree {
   private TreeNode root;
   private int size;
+  public TreeNode getRoot()
+  {
+    return root;
+  }
+  public void insert(int data)
+  {     
+    TreeNode node = new TreeNode(data);    
+    if(root == null)
+    {
+      root = node;
+      size++;
+      System.out.println("Inserted successfully at root.");
+    }
+    else
+    {
+      TreeNode temp = root;
+      TreeNode parent = null;
+      while(temp != null)
+      {  
+        parent = temp;
+        if(node.getData() <= temp.getData())
+        {
+          temp = temp.getLeft();
+        }        
+        else
+        {    
+          temp = temp.getRight();
+                
+        }
+      }
+            
+      if(node.getData() <= parent.getData())
+      {          
+        parent.setLeft(node);
+        size++;
+        System.out.println("Insert Suc at left");
+      }
+      else
+      {          
+        parent.setRight(node);
+        size++;
+        System.out.println("Insert suc at right");
+      }
+    }
+  }
+}  
+
   
-}
+
