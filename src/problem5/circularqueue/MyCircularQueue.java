@@ -60,6 +60,13 @@ public class MyCircularQueue {
     }    
     return response;
   }
+  public Node peek(){    
+    Node response=null;    
+    if(front!=null && rear!= null){      
+      response=new Node(front.getData());  
+    }
+    return response;
+  }
 }
 
 
